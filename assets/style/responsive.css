@@ -1,0 +1,130 @@
+/* TABLET RESPONSIVE - 1300px (For larger tablets and smaller desktops) */
+@media (max-width: 1300px){
+    header{
+        padding: 1rem 2rem; /* کاهش پدینگ */
+    }
+    
+    .content{
+        margin-top: 50%; /* کاهش مارجین از بالا */
+        margin-left: 5%;
+        max-width: 50rem;
+    }
+
+    .robot-3d{
+        scale: 0.65; /* کمی بزرگتر از قبل */
+        top: -10%;
+        right: 0;
+    }
+}
+
+/* MOBILE RESPONSIVE - 768px (For most tablets in portrait and large phones) */
+@media (max-width: 768px){
+    .container {
+        padding: 0 1rem; /* کاهش پدینگ کانتینر */
+    }
+    
+    header{
+        padding: 1rem 0;
+    }
+
+    nav{
+        display: none; /* پنهان کردن منوی ناوبری */
+    }
+
+    header h1{
+        font-size: 2rem;
+    }
+
+    .btn-signing{
+        padding: 0.6rem 1.5rem;
+    }
+
+    /* تنظیم مجدد محل محتوا برای قرار گرفتن زیر ربات */
+    main {
+        min-height: auto; /* برای ارتفاع پویا */
+    }
+    .content{
+        margin-top: 28rem; /* ایجاد فضا در زیر ربات */
+        margin-left: 0;
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    /* ربات 3D در بالا وسط */
+    .robot-3d{
+        scale: 0.8; 
+        top: -10%; 
+        right: 0;
+        left: 0; /* برای قرار گرفتن در مرکز افقی */
+        margin: 0 auto;
+    }
+
+    .tag-box{
+        width: 15rem;
+    }
+    
+    .content h1{
+        font-size: 3rem;
+    }
+
+    .description{
+        font-size: 1.1rem;
+        max-width: 100%;
+    }
+
+    /* دکمه‌ها زیر هم */
+    .buttons {
+        flex-direction: column; 
+        gap: 0.8rem;
+    }
+
+    .btn-get-started, .btn-signing-main {
+        width: 100%; /* دکمه‌ها تمام عرض را بگیرند */
+        text-align: center;
+        font-size: 1rem;
+        padding: 0.8rem 1.2rem;
+    }
+}
+
+
+/* SMALL MOBILE RESPONSIVE - 480px (For smaller phones) */
+@media (max-width: 480px) {
+
+    header h1{
+        font-size: 1.5rem;
+    }
+
+    .btn-signing{
+        padding: 0.4rem 1rem;
+    }
+
+    /* ربات 3D کوچکتر */
+    .robot-3d{
+        scale: 0.7;
+        top: -10%;
+    }
+
+    .content{
+        margin-top: 18rem; /* کاهش مارجین بالا به دلیل کوچکتر شدن ربات */
+        padding: 0 0.5rem;
+    }
+
+    .tag-box{
+        width: 10rem;
+        height: 2rem;
+    }
+    
+    .content h1{
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+
+    .description{
+        font-size: 0.9rem;
+    }
+    
+    .btn-get-started, .btn-signing-main{
+        font-size: 0.8rem;
+        padding: 0.6rem 1rem;
+    }
+}
